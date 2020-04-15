@@ -1,5 +1,11 @@
 [
   {
+    "title": "cov19cz",
+    "description": "Czech COVID-19 tracker application.",
+    "build": "Built with React, Axios, Reaviz and styled-components",
+    "image": "covid.png"
+  },
+  {
     "title": "xQuest Online",
     "description": "Application for telephone and field survey interviewing used in market research.",
     "build": "Built with Angular, Angular Material, Node.js, Express.js and MySQL.",
@@ -14,7 +20,7 @@
   {
     "title": "Simple Weather",
     "description": "Simple location based weather app for next few days.",
-    "build": "Built with React and Axios.",
+    "build": "Built with React, Axios and styled-components.",
     "image": "simple-weather.png"
   },
   {
