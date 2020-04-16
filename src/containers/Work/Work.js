@@ -18,6 +18,8 @@ const workOutput = projects.map((project) => {
       title={project.title}
       description={project.description}
       build={project.build}
+      live={project.live}
+      repo={project.repo}
     />
   );
 });

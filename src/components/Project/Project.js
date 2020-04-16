@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from '../UI/Button/Button';
 
 const Img = styled.img`
   width: 200px;
@@ -40,10 +41,19 @@ const TextColumn = styled.div`
   bottom: 10px;
 
   @media ${(props) => props.theme.mediaQueries.medium} {
-    text-align: left;
     width: 95%;
     margin: auto;
     position: relative;
+  }
+`;
+
+const Buttons = styled.div`
+  float: right;
+  margin: 8px;
+
+  @media ${(props) => props.theme.mediaQueries.medium} {
+    float: none;
+    text-align: center;
   }
 `;
 
@@ -70,12 +80,18 @@ const Build = styled.p`
 `;
 
 const Project = (props) => {
+  const live = props.live ? <Button link={props.live}>LIVE</Button> : null;
+  const repo = props.repo ? <Button link={props.repo}>REPO</Button> : null;
   return (
     <Row>
       <MockupColumn>
         <Img src={props.image} alt={props.alt} />
       </MockupColumn>
       <TextColumn>
+        <Buttons>
+          {live}
+          {repo}
+        </Buttons>
         <Title>{props.title}</Title>
         <Desc>{props.description}</Desc>
         <Build>{props.build}</Build>

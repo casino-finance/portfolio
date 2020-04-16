@@ -44,6 +44,14 @@ body,
     margin: 0;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 a {
   text-decoration: none;
   color: inherit;

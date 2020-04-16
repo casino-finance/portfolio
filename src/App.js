@@ -7,8 +7,8 @@ import About from './containers/About/About';
 import Hero from './containers/Hero/Hero';
 import Work from './containers/Work/Work';
 import Contact from './containers/Contact/Contact';
-import Divider from './components/Divider/Divider';
-import HeroDivider from './components/Divider/Hero-divider';
+import Divider from './components/UI/Divider/Divider';
+import HeroDivider from './components/UI/Divider/Hero-divider';
 
 const App = () => {
   return (
