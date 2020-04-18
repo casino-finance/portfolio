@@ -9,7 +9,7 @@ const theme = {
   },
   mediaQueries: {
     large: '(max-width: 1279px)',
-    medium: '(max-width: 639px)',
+    medium: '(max-width: 679px)',
     small: '(max-width: 449px)',
   },
   shadow:

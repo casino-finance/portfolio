@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Aux from '../../hoc/Auxiliary/Auxiliary';
+import Anchor from '../../components/UI/Anchor/Anchor';
+import Title from '../../components/UI/Title/Title';
+
 const HandEmoji = styled.span`
   animation-name: wave-animation;
   animation-duration: 2.5s;
@@ -35,21 +39,25 @@ const HandEmoji = styled.span`
 
 const About = () => {
   return (
-    <div style={{ padding: '0 15px' }} id="about">
-      <h1>
-        Hello, I&apos;m Petr Rajtslegr&nbsp;
-        {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
-        <HandEmoji role="img" aria-label="Waving hand">
-          👋
-        </HandEmoji>
-      </h1>
-      <h3>
-        I am developer based in Prague, Czech Republic and I love to create things&nbsp;
-        <span role="img" aria-label="Smile">
-          🙂
-        </span>
-      </h3>
-    </div>
+    <Aux>
+      <Anchor id="about" />
+      <Title>{'{ about }'}</Title>
+      <div style={{ padding: '0 15px' }}>
+        <h1>
+          Hello, I&apos;m Petr Rajtslegr&nbsp;
+          {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
+          <HandEmoji role="img" aria-label="Waving hand">
+            👋
+          </HandEmoji>
+        </h1>
+        <h3>
+          I am developer based in Prague, Czech Republic and I love to create things&nbsp;
+          <span role="img" aria-label="Smile">
+            🙂
+          </span>
+        </h3>
+      </div>
+    </Aux>
   );
 };
 

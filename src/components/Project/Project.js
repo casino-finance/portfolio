@@ -13,7 +13,7 @@ const Img = styled.img`
   }
 `;
 
-const Row = styled.div`
+const Card = styled.div`
   margin-bottom: 1.2rem;
   border: 2px solid #e91e63;
   border-radius: 12px;
@@ -23,7 +23,7 @@ const Row = styled.div`
 `;
 
 const MockupColumn = styled.div`
-  margin: 8px 0;
+  margin: 12px 0;
   text-align: center;
   width: 40%;
 
@@ -38,7 +38,7 @@ const TextColumn = styled.div`
   position: absolute;
   right: 0;
   top: 0;
-  bottom: 10px;
+  bottom: 12px;
 
   @media ${(props) => props.theme.mediaQueries.medium} {
     width: 95%;
@@ -49,7 +49,7 @@ const TextColumn = styled.div`
 
 const Buttons = styled.div`
   float: right;
-  margin: 8px;
+  margin: 12px;
 
   @media ${(props) => props.theme.mediaQueries.medium} {
     float: none;
@@ -83,7 +83,7 @@ const Project = (props) => {
   const live = props.live ? <Button link={props.live}>LIVE</Button> : null;
   const repo = props.repo ? <Button link={props.repo}>REPO</Button> : null;
   return (
-    <Row>
+    <Card>
       <MockupColumn>
         <Img src={props.image} alt={props.alt} />
       </MockupColumn>
@@ -96,7 +96,7 @@ const Project = (props) => {
         <Desc>{props.description}</Desc>
         <Build>{props.build}</Build>
       </TextColumn>
-    </Row>
+    </Card>
   );
 };
 

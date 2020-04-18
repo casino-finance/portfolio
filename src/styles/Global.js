@@ -48,7 +48,8 @@ input,
 textarea,
 button,
 select,
-a {
+a,
+img {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 

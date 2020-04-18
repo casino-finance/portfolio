@@ -104,7 +104,10 @@ const Toolbar = () => {
               <a href="#about">{'{ about }'}</a>
             </Li>
             <Li>
-              <a href="#work">{'{ work }'}</a>
+              <a href="#instagram">{'{ instagram }'}</a>
+            </Li>
+            <Li>
+              <a href="#projects">{'{ projects }'}</a>
             </Li>
             <Li>
               <a href="#contact">{'{ contact }'}</a>
