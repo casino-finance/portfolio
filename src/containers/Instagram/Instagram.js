@@ -27,36 +27,38 @@ const Instagram = () => {
   });
 
   useEffect(() => {
-    loadData();
-  });
+    const getData = async () => {
+      if (data.loading) {
+        await axios
+          .get(
+            'https://www.instagram.com/graphql/query/?query_hash=472f257a40c653c64c666ce877d59d2b&variables={"id":"427246549","first":9}',
+          )
+          .then((response) => {
+            setData({
+              ...data,
+              igData: response.data.data.user.edge_owner_to_timeline_media.edges,
+              loading: false,
+            });
+          })
+          .catch((_error) => {
+            setData({
+              ...data,
+              loading: false,
+              error: true,
+            });
+          });
+      }
+    };
 
-  const loadData = () => {
-    if (data.loading) {
-      axios
-        .get('https://www.instagram.com/rajce/?__a=1')
-        .then((response) => {
-          setData({
-            ...data,
-            igData: response.data.graphql.user.edge_owner_to_timeline_media.edges,
-            loading: false,
-          });
-        })
-        .catch((_error) => {
-          setData({
-            ...data,
-            loading: false,
-            error: true,
-          });
-        });
-    }
-  };
+    getData();
+  });
 
   const prepareProps = (i) => {
     return {
       img: data.igData[i].node.thumbnail_src,
-      alt: data.igData[i].node.accessibility_caption,
+      alt: data.igData[i].node.edge_media_to_caption.edges[0].node.text,
       link: `https://www.instagram.com/p/${data.igData[i].node.shortcode}`,
-      likes: data.igData[i].node.edge_liked_by.count,
+      likes: data.igData[i].node.edge_media_preview_like.count,
     };
   };
 
