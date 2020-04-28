@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Aux from '../../hoc/Auxiliary/Auxiliary';
 import Anchor from '../../components/UI/Anchor/Anchor';
 import Title from '../../components/UI/Title/Title';
 
@@ -11,7 +10,7 @@ const Letter = styled.span`
 
 const Contact = () => {
   return (
-    <Aux>
+    <>
       <Anchor id="contact" />
       <Title>{'{ contact }'}</Title>
       <div style={{ textAlign: 'center' }}>
@@ -28,7 +27,7 @@ const Contact = () => {
           </Letter>
         </a>
       </div>
-    </Aux>
+    </>
   );
 };
 

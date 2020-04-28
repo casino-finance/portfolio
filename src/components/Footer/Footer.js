@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-import Aux from '../../hoc/Auxiliary/Auxiliary';
+import WaveSvg from '../../assets/wave.svg';
 
-import WaveSvg from '../../assets/icons/wave.svg';
 import Facebook from '../../assets/icons/facebook.svg';
 import Github from '../../assets/icons/github.svg';
 import Instagram from '../../assets/icons/instagram.svg';
@@ -19,6 +18,7 @@ const FootCont = styled.div`
   bottom: 0;
   right: 0;
 `;
+
 const Foot = styled.div`
   height: 120px;
   color: ${(props) => props.theme.colors.purple};
@@ -33,6 +33,7 @@ const Foot = styled.div`
 
 const Wave = styled.img`
   width: 100%;
+  margin-bottom: -1px;
   vertical-align: bottom;
 `;
 
@@ -78,74 +79,64 @@ const Footer = () => {
   }, []);
 
   return (
-    <Aux>
-      <FootCont>
-        <Wave src={WaveSvg} alt="Wave SVG" />
-        <Foot>
-          <Ul>
-            <Li>
-              <Icon href="https://github.com/RajceP" rel="noopener noreferrer" target="_blank">
-                <img width="32px" src={Github} alt="GitHub Icon" />
-              </Icon>
-            </Li>
-            <Li>
-              <Icon
-                href="https://www.linkedin.com/in/petr-rajtšlégr-5aa84a16b"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img width="32px" src={Linkedin} alt="LinkedIn Icon" />
-              </Icon>
-            </Li>
-            <Li>
-              <Icon
-                href="https://www.facebook.com/petr.rajtslegr"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img width="32px" src={Facebook} alt="Facebook Icon" />
-              </Icon>
-            </Li>
-            <Li>
-              <Icon href="https://twitter.com/RajceP" rel="noopener noreferrer" target="_blank">
-                <img width="32px" src={Twitter} alt="Twitter Icon" />
-              </Icon>
-            </Li>
-          </Ul>
-          <Ul>
-            <Li>
-              <Icon
-                href="https://www.instagram.com/rajce"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img width="32px" src={Instagram} alt="Instagram Icon" />
-              </Icon>
-            </Li>
-            <Li>
-              <Icon href="https://t.me/rajcep" rel="noopener noreferrer" target="_blank">
-                <img width="32px" src={Telegram} alt="Telegram Icon" />
-              </Icon>
-            </Li>
-            <Li>
-              <Icon
-                href="https://www.last.fm/user/RajceP"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img width="32px" src={LastFm} alt="Last.fm Icon" />
-              </Icon>
-            </Li>
-            <Li>
-              <Icon href="https://soundcloud.com/rajcep" rel="noopener noreferrer" target="_blank">
-                <img width="32px" src={SoundCloud} alt="SoundCloud Icon" />
-              </Icon>
-            </Li>
-          </Ul>
-          <div>Petr Rajtslegr &copy; {year}</div>
-        </Foot>
-      </FootCont>
-    </Aux>
+    <FootCont>
+      <Wave src={WaveSvg} alt="Wave SVG" />
+      <Foot>
+        <Ul>
+          <Li>
+            <Icon href="https://github.com/RajceP" rel="noopener noreferrer" target="_blank">
+              <img width="32px" src={Github} alt="GitHub Icon" />
+            </Icon>
+          </Li>
+          <Li>
+            <Icon
+              href="https://www.linkedin.com/in/petr-rajtšlégr-5aa84a16b"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img width="32px" src={Linkedin} alt="LinkedIn Icon" />
+            </Icon>
+          </Li>
+          <Li>
+            <Icon
+              href="https://www.facebook.com/petr.rajtslegr"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img width="32px" src={Facebook} alt="Facebook Icon" />
+            </Icon>
+          </Li>
+          <Li>
+            <Icon href="https://twitter.com/RajceP" rel="noopener noreferrer" target="_blank">
+              <img width="32px" src={Twitter} alt="Twitter Icon" />
+            </Icon>
+          </Li>
+        </Ul>
+        <Ul>
+          <Li>
+            <Icon href="https://www.instagram.com/rajce" rel="noopener noreferrer" target="_blank">
+              <img width="32px" src={Instagram} alt="Instagram Icon" />
+            </Icon>
+          </Li>
+          <Li>
+            <Icon href="https://t.me/rajcep" rel="noopener noreferrer" target="_blank">
+              <img width="32px" src={Telegram} alt="Telegram Icon" />
+            </Icon>
+          </Li>
+          <Li>
+            <Icon href="https://www.last.fm/user/RajceP" rel="noopener noreferrer" target="_blank">
+              <img width="32px" src={LastFm} alt="Last.fm Icon" />
+            </Icon>
+          </Li>
+          <Li>
+            <Icon href="https://soundcloud.com/rajcep" rel="noopener noreferrer" target="_blank">
+              <img width="32px" src={SoundCloud} alt="SoundCloud Icon" />
+            </Icon>
+          </Li>
+        </Ul>
+        <div>Petr Rajtslegr &copy; {year}</div>
+      </Foot>
+    </FootCont>
   );
 };
 

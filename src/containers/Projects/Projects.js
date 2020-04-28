@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Aux from '../../hoc/Auxiliary/Auxiliary';
 import Anchor from '../../components/UI/Anchor/Anchor';
 import Title from '../../components/UI/Title/Title';
 import Project from '../../components/Project/Project';
@@ -29,11 +28,11 @@ const workOutput = projects.map((project) => {
 
 const Work = () => {
   return (
-    <Aux>
+    <>
       <Anchor id="projects" />
       <Title>{'{ projects }'}</Title>
       <div style={{ padding: '0 15px' }}>{workOutput}</div>
-    </Aux>
+    </>
   );
 };
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Aux from '../../hoc/Auxiliary/Auxiliary';
 import Anchor from '../../components/UI/Anchor/Anchor';
 import Title from '../../components/UI/Title/Title';
 
@@ -39,7 +38,7 @@ const HandEmoji = styled.span`
 
 const About = () => {
   return (
-    <Aux>
+    <>
       <Anchor id="about" />
       <Title>{'{ about }'}</Title>
       <div style={{ padding: '0 15px' }}>
@@ -57,7 +56,7 @@ const About = () => {
           </span>
         </h3>
       </div>
-    </Aux>
+    </>
   );
 };
 

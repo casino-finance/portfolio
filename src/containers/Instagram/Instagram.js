@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 
-import Aux from '../../hoc/Auxiliary/Auxiliary';
 import Anchor from '../../components/UI/Anchor/Anchor';
 import Title from '../../components/UI/Title/Title';
 import InstaCard from '../../components/InstaCard/InstaCard';
@@ -70,7 +69,7 @@ const Instagram = () => {
 
   if (!data.loading && data.igData.length > 0) {
     instagramOutput = (
-      <Aux>
+      <>
         <Anchor id="instagram" />
         <Title>{'{ instagram }'}</Title>
         <Cont>
@@ -88,7 +87,7 @@ const Instagram = () => {
           <InstaCard cardData={prepareProps(7)} />
           <InstaCard cardData={prepareProps(8)} />
         </Cont>
-      </Aux>
+      </>
     );
   }
   return instagramOutput;
