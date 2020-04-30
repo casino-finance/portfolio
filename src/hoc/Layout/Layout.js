@@ -10,18 +10,19 @@ const View = styled.div`
 `;
 
 const Main = styled.main`
-  padding-bottom: 300px;
-  margin: auto;
+  width: 95%;
   height: 100%;
-  width: 50%;
-
-  @media ${(props) => props.theme.mediaQueries.large} {
-    width: 95%;
-    padding-bottom: 180px;
-  }
+  margin: auto;
+  padding-bottom: 180px;
+  font-size: 0.66em;
 
   @media ${(props) => props.theme.mediaQueries.medium} {
-    font-size: 0.66em;
+    padding-bottom: 300px;
+    font-size: 1em;
+  }
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    width: 50%;
   }
 `;
 

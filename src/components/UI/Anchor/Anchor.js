@@ -4,11 +4,11 @@ import styled from 'styled-components';
 const SyledAnchor = styled.a`
   display: block;
   position: relative;
-  top: -2.4rem;
+  top: -1.2rem;
   visibility: hidden;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
-    top: -1.2rem;
+  @media ${(props) => props.theme.mediaQueries.large} {
+    top: -2.4rem;
   }
 `;
 

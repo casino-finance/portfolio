@@ -5,7 +5,7 @@ import Anchor from '../../components/UI/Anchor/Anchor';
 import Title from '../../components/UI/Title/Title';
 
 const Letter = styled.span`
-  font-size: 3.4em;
+  font-size: 3.4rem;
 `;
 
 const Contact = () => {

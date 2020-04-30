@@ -3,22 +3,19 @@ import styled from 'styled-components';
 import Headroom from 'react-headroom';
 
 const Bar = styled.header`
-  width: 50%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   height: 56px;
   display: flex;
   box-sizing: border-box;
   z-index: 90;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #221a36;
 
   @media ${(props) => props.theme.mediaQueries.large} {
-    width: 95%;
-  }
-
-  @media ${(props) => props.theme.mediaQueries.medium} {
-    justify-content: center;
+    width: 75%;
+    justify-content: space-between;
   }
 `;
 
@@ -52,9 +49,10 @@ const Title = styled.p`
 
 const Nav = styled.nav`
   margin: auto 0;
+  display: none;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
-    display: none;
+  @media ${(props) => props.theme.mediaQueries.large} {
+    display: block;
   }
 `;
 

@@ -40,13 +40,17 @@ const Cont = styled.div`
 
 const HeroPic = styled.img`
   margin: 0 auto 38px;
-  width: 334px;
+  width: 250px;
   border-radius: 50%;
   transition: all 250ms ease-out;
   box-shadow: ${(props) => props.theme.shadow};
 
-  @media ${(props) => props.theme.mediaQueries.small} {
-    width: 250px;
+  @media ${(props) => props.theme.mediaQueries.large} {
+    width: 334px;
+  }
+
+  @media ${(props) => props.theme.mediaQueries.landscape} {
+    width: 234px;
   }
 
   @media (hover: hover) {
@@ -60,16 +64,21 @@ const HeroPic = styled.img`
 
 const IconsList = styled.div`
   text-align: center;
+  display: block;
+
+  @media ${(props) => props.theme.mediaQueries.landscape} {
+    display: none;
+  }
 `;
 
 const Ul = styled.ul`
-  display: inline-block;
+  display: block;
   text-align: center;
   padding: 0;
   list-style: none;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
-    display: block;
+  @media ${(props) => props.theme.mediaQueries.large} {
+    display: inline-block;
   }
 `;
 
@@ -78,11 +87,11 @@ const Li = styled.li`
 `;
 
 const Icon = styled.img`
-  width: 72px;
+  width: 48px;
   margin: 4px 8px;
 
-  @media ${(props) => props.theme.mediaQueries.small} {
-    width: 48px;
+  @media ${(props) => props.theme.mediaQueries.medium} {
+    width: 72px;
   }
 `;
 

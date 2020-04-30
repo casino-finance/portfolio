@@ -6,7 +6,7 @@ const StyledHr = styled.hr`
   border: 0;
   clear: both;
   display: block;
-  margin: 2.4rem auto;
+  margin: 1.2rem auto;
   text-align: center;
   width: 100%;
   height: 2px;
@@ -14,8 +14,8 @@ const StyledHr = styled.hr`
   position: relative;
   box-shadow: ${(props) => props.theme.shadow};
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
-    margin: 1.2rem auto;
+  @media ${(props) => props.theme.mediaQueries.large} {
+    margin: 2.4rem auto;
   }
 `;
 

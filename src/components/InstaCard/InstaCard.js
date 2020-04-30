@@ -3,41 +3,41 @@ import styled from 'styled-components';
 
 const Card = styled.div`
   position: relative;
-  width: 15vw;
-  height: 15vw;
+  width: 24vw;
+  height: 24vw;
   margin-bottom: 3.5vh;
   border: 2px solid #e91e63;
   border-radius: 12px;
-  position: relative;
   box-sizing: border-box;
   box-shadow: ${(props) => props.theme.shadow};
   outline: none;
   cursor: pointer;
 
-  @media ${(props) => props.theme.mediaQueries.large} {
+  @media ${(props) => props.theme.mediaQueries.medium} {
     width: 28.5vw;
     height: 28.5vw;
-    margin-bottom: 2.5vh;
   }
 
-  @media ${(props) => props.theme.mediaQueries.small} {
-    width: 24vw;
-    height: 24vw;
+  @media ${(props) => props.theme.mediaQueries.large} {
+    width: 15vw;
+    height: 15vw;
+    margin-bottom: 2.5vh;
   }
 `;
 
 const Img = styled.img`
-  width: calc(15vw - 4px);
-  height: calc(15vw - 4px);
+  width: calc(24vw - 4px);
+  height: calc(24vw - 4px);
   border-radius: 10px;
 
-  @media ${(props) => props.theme.mediaQueries.large} {
+  @media ${(props) => props.theme.mediaQueries.medium} {
     width: calc(28.5vw - 4px);
     height: calc(28.5vw - 4px);
   }
-  @media ${(props) => props.theme.mediaQueries.small} {
-    width: calc(24vw - 4px);
-    height: calc(24vw - 4px);
+
+  @media ${(props) => props.theme.mediaQueries.large} {
+    width: calc(15vw - 4px);
+    height: calc(15vw - 4px);
   }
 `;
 

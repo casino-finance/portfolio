@@ -20,14 +20,14 @@ const FootCont = styled.div`
 `;
 
 const Foot = styled.div`
-  height: 120px;
+  height: 140px;
   color: ${(props) => props.theme.colors.purple};
   background-color: ${(props) => props.theme.colors.pink};
   font-family: inherit;
   text-align: center;
 
-  @media ${(props) => props.theme.mediaQueries.small} {
-    height: 140px;
+  @media ${(props) => props.theme.mediaQueries.medium} {
+    height: 120px;
   }
 `;
 
@@ -38,14 +38,14 @@ const Wave = styled.img`
 `;
 
 const Ul = styled.ul`
-  display: inline-block;
+  display: block;
+  padding: 3px 0;
   text-align: center;
-  padding: 16px 0;
   list-style: none;
 
-  @media ${(props) => props.theme.mediaQueries.small} {
-    display: block;
-    padding: 3px 0;
+  @media ${(props) => props.theme.mediaQueries.medium} {
+    display: inline-block;
+    padding: 16px 0;
   }
 `;
 

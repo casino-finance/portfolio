@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import Button from '../UI/Button/Button';
 
 const Img = styled.img`
-  width: 200px;
-  border-radius: 30px;
+  width: 100px;
+  border-radius: 15px;
   box-shadow: ${(props) => props.theme.shadow};
 
   @media ${(props) => props.theme.mediaQueries.medium} {
-    width: 100px;
-    border-radius: 15px;
+    width: 200px;
+    border-radius: 30px;
   }
 `;
 
@@ -25,57 +25,59 @@ const Card = styled.div`
 const MockupColumn = styled.div`
   margin: 12px 0;
   text-align: center;
-  width: 40%;
+  width: 100%;
 
   @media ${(props) => props.theme.mediaQueries.medium} {
-    width: 100%;
+    width: 40%;
   }
 `;
 
 const TextColumn = styled.div`
+  width: 95%;
+  margin: auto;
+  position: relative;
   text-align: left;
-  width: 60%;
-  position: absolute;
   right: 0;
   top: 0;
   bottom: 12px;
 
   @media ${(props) => props.theme.mediaQueries.medium} {
-    width: 95%;
-    margin: auto;
-    position: relative;
+    position: absolute;
+    width: 60%;
   }
 `;
 
 const Buttons = styled.div`
-  float: right;
+  float: none;
+  text-align: center;
   margin: 12px;
 
   @media ${(props) => props.theme.mediaQueries.medium} {
-    float: none;
-    text-align: center;
+    float: right;
+    text-align: left;
   }
 `;
 
 const Title = styled.h1`
+  text-align: center;
   text-decoration: underline;
 
   @media ${(props) => props.theme.mediaQueries.medium} {
-    text-align: center;
+    text-align: left;
   }
 `;
 
 const Desc = styled.h3``;
 
 const Build = styled.p`
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
+  position: relative;
+  margin-top: 5px;
+  bottom: 5px;
 
   @media ${(props) => props.theme.mediaQueries.medium} {
-    position: relative;
-    margin-top: 5px;
-    bottom: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
   }
 `;
 

@@ -8,9 +8,10 @@ const theme = {
     pink: '#e91e63',
   },
   mediaQueries: {
-    large: '(max-width: 1279px)',
-    medium: '(max-width: 679px)',
-    small: '(max-width: 449px)',
+    large: '(min-width: 1280px)',
+    medium: '(min-width: 680px)',
+    small: '(min-width: 450px)',
+    landscape: '(max-height: 570px)',
   },
   shadow:
     '0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12)',
