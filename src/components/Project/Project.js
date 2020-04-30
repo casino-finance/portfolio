@@ -82,6 +82,7 @@ const Build = styled.p`
 const Project = (props) => {
   const live = props.live ? <Button link={props.live}>LIVE</Button> : null;
   const repo = props.repo ? <Button link={props.repo}>REPO</Button> : null;
+
   return (
     <Card>
       <MockupColumn>
