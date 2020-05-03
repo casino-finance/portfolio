@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const SyledAnchor = styled.a`
@@ -14,6 +15,10 @@ const SyledAnchor = styled.a`
 
 const Anchor = (props) => {
   return <SyledAnchor id={props.id} />;
+};
+
+Anchor.propTypes = {
+  id: PropTypes.string.isRequired,
 };
 
 export default Anchor;

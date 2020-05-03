@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -31,6 +32,11 @@ const Button = (props) => {
       <StyledButton>{props.children}</StyledButton>
     </a>
   );
+};
+
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 export default Button;

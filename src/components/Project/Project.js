@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from '../UI/Button/Button';
 
@@ -101,6 +102,21 @@ const Project = (props) => {
       </TextColumn>
     </Card>
   );
+};
+
+Project.propTypes = {
+  alt: PropTypes.string.isRequired,
+  build: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  live: PropTypes.string,
+  repo: PropTypes.string,
+  title: PropTypes.string.isRequired,
+};
+
+Project.defaultProps = {
+  live: null,
+  repo: null,
 };
 
 export default Project;

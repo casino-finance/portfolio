@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Toolbar from '../../components/Toolbar/Toolbar';
@@ -34,6 +35,10 @@ const Layout = (props) => {
       <Footer />
     </View>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Card = styled.div`
@@ -89,6 +90,15 @@ const InstaCard = (props) => {
       </a>
     </Card>
   );
+};
+
+InstaCard.propTypes = {
+  cardData: PropTypes.shape({
+    alt: PropTypes.string,
+    img: PropTypes.string,
+    likes: PropTypes.number,
+    link: PropTypes.string,
+  }).isRequired,
 };
 
 export default InstaCard;
