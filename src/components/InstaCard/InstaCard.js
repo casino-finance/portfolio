@@ -73,18 +73,18 @@ const Text = styled.div`
   text-align: center;
 `;
 
-const InstaCard = (props) => {
+const InstaCard = ({ cardData: { alt, img, likes, link } }) => {
   return (
     <Card>
-      <a href={props.cardData.link} rel="noopener noreferrer" target="_blank">
-        <Img src={props.cardData.img} alt={props.cardData.alt} />
+      <a href={link} rel="noopener noreferrer" target="_blank">
+        <Img src={img} alt={alt} />
 
         <Hover>
           <Text>
             <span role="img" aria-label="Heart Emoji">
               🤍
             </span>
-            {props.cardData.likes}
+            {likes}
           </Text>
         </Hover>
       </a>

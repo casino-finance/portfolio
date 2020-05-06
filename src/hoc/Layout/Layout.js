@@ -27,11 +27,11 @@ const Main = styled.main`
   }
 `;
 
-const Layout = (props) => {
+const Layout = ({ children }) => {
   return (
     <View>
       <Toolbar />
-      <Main>{props.children}</Main>
+      <Main>{children}</Main>
       <Footer />
     </View>
   );

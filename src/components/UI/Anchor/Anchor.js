@@ -13,8 +13,8 @@ const SyledAnchor = styled.a`
   }
 `;
 
-const Anchor = (props) => {
-  return <SyledAnchor id={props.id} />;
+const Anchor = ({ id }) => {
+  return <SyledAnchor id={id} />;
 };
 
 Anchor.propTypes = {

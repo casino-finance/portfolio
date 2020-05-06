@@ -42,10 +42,10 @@
       },
       "command": "Firefox",
       "linux": {
-        "command": "/mnt/c/Program Files/Mozilla Firefox/firefox.exe"
+        "command": "/mnt/c/Program Files/Firefox Developer Edition/firefox.exe"
       },
       "windows": {
-        "command": "C:/Program Files/Mozilla Firefox/firefox.exe"
+        "command": "C:/Program Files/Firefox Developer Edition/firefox.exe"
       },
       "args": ["http://localhost:3000"],
       "presentation": {
@@ -65,10 +65,10 @@
       },
       "command": "Opera",
       "linux": {
-        "command": "/mnt/c/Users/petrr/AppData/Local/Programs/Opera/launcher.exe"
+        "command": "/mnt/c/Users/petrr/AppData/Local/Programs/Opera developer/launcher.exe"
       },
       "windows": {
-        "command": "C:/Users/petrr/AppData/Local/Programs/Opera/launcher.exe"
+        "command": "C:/Users/petrr/AppData/Local/Programs/Opera developer/launcher.exe"
       },
       "args": ["http://localhost:3000"],
       "presentation": {

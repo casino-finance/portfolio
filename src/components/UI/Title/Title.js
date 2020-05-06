@@ -8,8 +8,8 @@ const StyledTitle = styled.h1`
   margin-bottom: 1.6rem;
 `;
 
-const Title = (props) => {
-  return <StyledTitle>{props.children}</StyledTitle>;
+const Title = ({ children }) => {
+  return <StyledTitle>{children}</StyledTitle>;
 };
 
 Title.propTypes = {

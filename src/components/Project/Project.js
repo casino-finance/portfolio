@@ -82,23 +82,23 @@ const Build = styled.p`
   }
 `;
 
-const Project = (props) => {
-  const live = props.live ? <Button link={props.live}>LIVE</Button> : null;
-  const repo = props.repo ? <Button link={props.repo}>REPO</Button> : null;
+const Project = ({ title, description, build, image, alt, live, repo }) => {
+  const liveOutput = live ? <Button link={live}>LIVE</Button> : null;
+  const repoOutput = repo ? <Button link={repo}>REPO</Button> : null;
 
   return (
     <Card>
       <MockupColumn>
-        <Img src={props.image} alt={props.alt} />
+        <Img src={image} alt={alt} />
       </MockupColumn>
       <TextColumn>
         <Buttons>
-          {live}
-          {repo}
+          {liveOutput}
+          {repoOutput}
         </Buttons>
-        <Title>{props.title}</Title>
-        <Desc>{props.description}</Desc>
-        <Build>{props.build}</Build>
+        <Title>{title}</Title>
+        <Desc>{description}</Desc>
+        <Build>{build}</Build>
       </TextColumn>
     </Card>
   );

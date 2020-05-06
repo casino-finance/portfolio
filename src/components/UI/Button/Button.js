@@ -26,10 +26,10 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = (props) => {
+const Button = ({ link, children }) => {
   return (
-    <a href={props.link} rel="noopener noreferrer" target="_blank">
-      <StyledButton>{props.children}</StyledButton>
+    <a href={link} rel="noopener noreferrer" target="_blank">
+      <StyledButton>{children}</StyledButton>
     </a>
   );
 };
