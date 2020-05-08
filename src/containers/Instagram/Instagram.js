@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
-import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
+import axios from 'axios';
+import styled from 'styled-components';
+
+import InstaCard from '../../components/InstaCard/InstaCard';
 import Anchor from '../../components/UI/Anchor/Anchor';
 import Title from '../../components/UI/Title/Title';
-import InstaCard from '../../components/InstaCard/InstaCard';
 
 const Cont = styled.div`
   padding: 0 15px;

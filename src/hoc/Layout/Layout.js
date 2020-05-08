@@ -1,9 +1,10 @@
 import React from 'react';
+
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Toolbar from '../../components/Toolbar/Toolbar';
 import Footer from '../../components/Footer/Footer';
+import Toolbar from '../../components/Toolbar/Toolbar';
 
 const View = styled.div`
   position: relative;

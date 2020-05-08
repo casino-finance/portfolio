@@ -1,17 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+
 import Particles from 'react-particles-js';
+import styled from 'styled-components';
 
-import heroImg from '../../assets/images/hero.png';
-import JavaScript from '../../assets/icons/javascript.svg';
-import Html5 from '../../assets/icons/html5.svg';
-import Css3 from '../../assets/icons/css3.svg';
-import TypeScript from '../../assets/icons/typescript.svg';
-import ReactSvg from '../../assets/icons/react.svg';
 import Angular from '../../assets/icons/angular.svg';
-import NodeJs from '../../assets/icons/node-dot-js.svg';
+import Css3 from '../../assets/icons/css3.svg';
+import Html5 from '../../assets/icons/html5.svg';
+import JavaScript from '../../assets/icons/javascript.svg';
 import MySql from '../../assets/icons/mysql.svg';
-
+import NodeJs from '../../assets/icons/node-dot-js.svg';
+import ReactSvg from '../../assets/icons/react.svg';
+import TypeScript from '../../assets/icons/typescript.svg';
+import heroImg from '../../assets/images/hero.png';
 import particlesParams from '../../assets/particlesjs-config.json';
 
 const Cont = styled.div`

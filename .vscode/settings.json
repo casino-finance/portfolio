@@ -1,5 +1,6 @@
 {
   "editor.formatOnSave": true,
+  "tsImportSorter.configuration.autoFormat": "onSave",
   "emmet.includeLanguages": {
     "*.js": "javascriptreact"
   },

@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
+import React, { useEffect, useState } from 'react';
 
-import WaveSvg from '../../assets/wave.svg';
+import styled from 'styled-components';
 
 import Facebook from '../../assets/icons/facebook.svg';
 import Github from '../../assets/icons/github.svg';
@@ -11,6 +10,7 @@ import Linkedin from '../../assets/icons/linkedin.svg';
 import SoundCloud from '../../assets/icons/soundcloud.svg';
 import Telegram from '../../assets/icons/telegram.svg';
 import Twitter from '../../assets/icons/twitter.svg';
+import WaveSvg from '../../assets/wave.svg';
 
 const FootCont = styled.div`
   position: absolute;

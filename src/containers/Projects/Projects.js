@@ -1,28 +1,27 @@
 import React from 'react';
 
+import projects from '../../assets/projects.json';
+import Project from '../../components/Project/Project';
 import Anchor from '../../components/UI/Anchor/Anchor';
 import Title from '../../components/UI/Title/Title';
-import Project from '../../components/Project/Project';
-
-import projects from '../../assets/projects.json';
 
 const Work = () => {
   const getImg = (img) => {
     // eslint-disable-next-line global-require,import/no-dynamic-require
-    return require('../../assets/images/' + img);
+    return require(`../../assets/images/${img}`);
   };
 
-  const workOutput = projects.map((project) => {
+  const workOutput = projects.map(({ title, image, name, description, build, live, repo }) => {
     return (
       <Project
-        key={project.title}
-        image={getImg(project.image)}
-        alt={project.name + 'mockup image'}
-        title={project.title}
-        description={project.description}
-        build={project.build}
-        live={project.live}
-        repo={project.repo}
+        key={title}
+        image={getImg(image)}
+        alt={`${name} mockup image`}
+        title={title}
+        description={description}
+        build={build}
+        live={live}
+        repo={repo}
       />
     );
   });

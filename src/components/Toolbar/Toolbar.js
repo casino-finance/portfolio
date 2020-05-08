@@ -1,6 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+
 import Headroom from 'react-headroom';
+import styled from 'styled-components';
 
 const Bar = styled.header`
   width: 95%;

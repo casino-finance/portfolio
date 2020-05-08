@@ -88,10 +88,10 @@
       },
       "command": "Edge",
       "linux": {
-        "command": "/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+        "command": "/mnt/c/Users/petrr/AppData/Local/Microsoft/Edge SxS/Application/msedge.exe"
       },
       "windows": {
-        "command": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+        "command": "C:/Users/petrr/AppData/Local/Microsoft/Edge SxS/Application/msedge.exe"
       },
       "args": ["http://localhost:3000"],
       "presentation": {
