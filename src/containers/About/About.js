@@ -5,6 +5,10 @@ import styled from 'styled-components';
 import Anchor from '../../components/UI/Anchor/Anchor';
 import Title from '../../components/UI/Title/Title';
 
+const Wrap = styled.div`
+  padding: 0 15px;
+`;
+
 const HandEmoji = styled.span`
   animation-name: wave-animation;
   animation-duration: 2.5s;
@@ -42,7 +46,7 @@ const About = () => {
     <>
       <Anchor id="about" />
       <Title>{'{ about }'}</Title>
-      <div style={{ padding: '0 15px' }}>
+      <Wrap>
         <h1>
           Hello, I&apos;m Petr Rajtslegr&nbsp;
           {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
@@ -56,7 +60,7 @@ const About = () => {
             🙂
           </span>
         </h3>
-      </div>
+      </Wrap>
     </>
   );
 };

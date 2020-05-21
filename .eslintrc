@@ -8,7 +8,7 @@
     }
   },
   "extends": ["airbnb", "prettier", "prettier/react"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "react-hooks"],
   "rules": {
     "react/jsx-filename-extension": [
       1,
@@ -16,6 +16,8 @@
         "extensions": [".js", ".jsx"]
       }
     ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "radix": 0,
     "no-restricted-syntax": 0,
     "no-await-in-loop": 0,

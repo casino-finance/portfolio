@@ -1,9 +1,15 @@
 import React from 'react';
 
+import styled from 'styled-components';
+
 import projects from '../../assets/projects.json';
 import Project from '../../components/Project/Project';
 import Anchor from '../../components/UI/Anchor/Anchor';
 import Title from '../../components/UI/Title/Title';
+
+const Wrap = styled.div`
+  padding: 0 15px;
+`;
 
 const Work = () => {
   const getImg = (img) => {
@@ -30,7 +36,7 @@ const Work = () => {
     <>
       <Anchor id="projects" />
       <Title>{'{ projects }'}</Title>
-      <div style={{ padding: '0 15px' }}>{workOutput}</div>
+      <Wrap>{workOutput}</Wrap>
     </>
   );
 };

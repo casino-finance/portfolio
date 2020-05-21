@@ -23,8 +23,31 @@
     },
     {
       "label": "npm stop",
-      "type": "process",
-      "command": ["${command:workbench.action.tasks.terminate}"],
+      "type": "shell",
+      "command": "echo '${command:workbench.action.tasks.terminate}'",
+      "presentation": {
+        "echo": true,
+        "reveal": "never",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Open in Chrome Canary",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "command": "Chrome Canary",
+      "linux": {
+        "command": "/mnt/c/Users/petrr/AppData/Local/Google/Chrome SxS/Application/chrome.exe"
+      },
+      "windows": {
+        "command": "C:/Users/petrr/AppData/Local/Google/Chrome SxS/Application/chrome.exe"
+      },
+      "args": ["http://localhost:4200"],
       "presentation": {
         "echo": true,
         "reveal": "never",
@@ -69,6 +92,29 @@
       },
       "windows": {
         "command": "C:/Users/petrr/AppData/Local/Programs/Opera developer/launcher.exe"
+      },
+      "args": ["http://localhost:3000"],
+      "presentation": {
+        "echo": true,
+        "reveal": "never",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Open in Brave",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "command": "Brave",
+      "linux": {
+        "command": "/mnt/c/Program Files (x86)/BraveSoftware/Brave-Browser-Nightly/Application/brave.exe"
+      },
+      "windows": {
+        "command": "C:/Program Files (x86)/BraveSoftware/Brave-Browser-Nightly/Application/brave.exe"
       },
       "args": ["http://localhost:3000"],
       "presentation": {

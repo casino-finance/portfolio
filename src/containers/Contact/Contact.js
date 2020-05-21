@@ -5,6 +5,10 @@ import styled from 'styled-components';
 import Anchor from '../../components/UI/Anchor/Anchor';
 import Title from '../../components/UI/Title/Title';
 
+const Wrap = styled.div`
+  text-align: center;
+`;
+
 const Letter = styled.span`
   font-size: 3.4rem;
 `;
@@ -14,7 +18,7 @@ const Contact = () => {
     <>
       <Anchor id="contact" />
       <Title>{'{ contact }'}</Title>
-      <div style={{ textAlign: 'center' }}>
+      <Wrap>
         <h1>Let&apos;s make something great together!</h1>
         <h1>You can get in touch with me here.</h1>
         <a
@@ -27,7 +31,7 @@ const Contact = () => {
             📧
           </Letter>
         </a>
-      </div>
+      </Wrap>
     </>
   );
 };
