@@ -56,7 +56,6 @@ const Instagram = () => {
   const prepareProps = (i) => {
     return {
       img: data.igData[i].node.thumbnail_src,
-      alt: data.igData[i].node.edge_media_to_caption.edges[0].node.text,
       link: `https://www.instagram.com/p/${data.igData[i].node.shortcode}`,
       likes: data.igData[i].node.edge_media_preview_like.count,
     };

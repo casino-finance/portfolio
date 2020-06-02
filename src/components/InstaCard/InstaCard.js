@@ -74,11 +74,11 @@ const Text = styled.div`
   text-align: center;
 `;
 
-const InstaCard = ({ cardData: { alt, img, likes, link } }) => {
+const InstaCard = ({ cardData: { img, likes, link } }) => {
   return (
     <Card>
       <a href={link} rel="noopener noreferrer" target="_blank">
-        <Img src={img} alt={alt} />
+        <Img src={img} alt="Instagram photo" />
 
         <Hover>
           <Text>
