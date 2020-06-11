@@ -7,7 +7,7 @@ import Angular from '../../assets/icons/angular.svg';
 import Css3 from '../../assets/icons/css3.svg';
 import Html5 from '../../assets/icons/html5.svg';
 import JavaScript from '../../assets/icons/javascript.svg';
-import MySql from '../../assets/icons/mysql.svg';
+import Mongo from '../../assets/icons/mongo.svg';
 import NodeJs from '../../assets/icons/node-dot-js.svg';
 import ReactSvg from '../../assets/icons/react.svg';
 import TypeScript from '../../assets/icons/typescript.svg';
@@ -125,7 +125,7 @@ const Hero = () => {
             <Icon src={NodeJs} alt="Node.js Icon" />
           </Li>
           <Li>
-            <Icon src={MySql} alt="MySQL Icon" />
+            <Icon src={Mongo} alt="MySQL Icon" />
           </Li>
         </Ul>
       </IconsList>
