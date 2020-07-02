@@ -11,16 +11,16 @@ const Card = styled.div`
   border: 2px solid #e91e63;
   border-radius: 12px;
   box-sizing: border-box;
-  box-shadow: ${(props) => props.theme.shadow};
+  box-shadow: ${({ theme }) => theme.shadow};
   outline: none;
   cursor: pointer;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
     width: 28.5vw;
     height: 28.5vw;
   }
 
-  @media ${(props) => props.theme.mediaQueries.large} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
     width: 15vw;
     height: 15vw;
     margin-bottom: 2.5vh;
@@ -32,12 +32,12 @@ const Img = styled.img`
   height: calc(24vw - 4px);
   border-radius: 10px;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
     width: calc(28.5vw - 4px);
     height: calc(28.5vw - 4px);
   }
 
-  @media ${(props) => props.theme.mediaQueries.large} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
     width: calc(15vw - 4px);
     height: calc(15vw - 4px);
   }
@@ -54,7 +54,7 @@ const Hover = styled.div`
   border-radius: 10px;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: ${(props) => props.theme.colors.purple};
+  background-color: ${({ theme: { colors } }) => colors.purple};
 
   @media (hover: hover) {
     :hover {
@@ -64,7 +64,7 @@ const Hover = styled.div`
 `;
 
 const Text = styled.div`
-  color: ${(props) => props.theme.colors.yellow};
+  color: ${({ theme: { colors } }) => colors.yellow};
   font: inherit;
   font-size: 20px;
   position: absolute;
@@ -79,7 +79,6 @@ const InstaCard = ({ cardData: { img, likes, link } }) => {
     <Card>
       <a href={link} rel="noopener noreferrer" target="_blank">
         <Img src={img} alt="Instagram photo" />
-
         <Hover>
           <Text>
             <span role="img" aria-label="Heart Emoji">

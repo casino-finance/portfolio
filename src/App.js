@@ -4,6 +4,7 @@ import Divider from './components/UI/Divider/Divider';
 import HeroDivider from './components/UI/Divider/Hero-divider';
 import About from './containers/About/About';
 import Contact from './containers/Contact/Contact';
+import GitHub from './containers/GitHub/GitHub';
 import Hero from './containers/Hero/Hero';
 import Instagram from './containers/Instagram/Instagram';
 import Projects from './containers/Projects/Projects';
@@ -21,6 +22,8 @@ const App = () => {
         <Instagram />
         <Divider />
         <Projects />
+        <Divider />
+        <GitHub />
         <Divider />
         <Contact />
       </Layout>

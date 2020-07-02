@@ -109,6 +109,9 @@ const Toolbar = () => {
               <a href="#projects">{'{ projects }'}</a>
             </Li>
             <Li>
+              <a href="#github">{'{ gitHub }'}</a>
+            </Li>
+            <Li>
               <a href="#contact">{'{ contact }'}</a>
             </Li>
           </Ul>
