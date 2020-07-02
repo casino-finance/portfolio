@@ -2,8 +2,8 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import Anchor from '../../components/UI/Anchor/Anchor';
-import Title from '../../components/UI/Title/Title';
+import Anchor from '../components/UI/Anchor';
+import Title from '../components/UI/Title';
 
 const Wrap = styled.div`
   padding: 0 15px;

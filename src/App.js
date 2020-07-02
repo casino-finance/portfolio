@@ -1,20 +1,22 @@
 import React from 'react';
 
-import Divider from './components/UI/Divider/Divider';
-import HeroDivider from './components/UI/Divider/Hero-divider';
-import About from './containers/About/About';
-import Contact from './containers/Contact/Contact';
-import GitHub from './containers/GitHub/GitHub';
-import Hero from './containers/Hero/Hero';
-import Instagram from './containers/Instagram/Instagram';
-import Projects from './containers/Projects/Projects';
-import Layout from './hoc/Layout/Layout';
-import Theme from './styles/Theme';
+import Divider from './components/UI/Divider';
+import HeroDivider from './components/UI/HeroDivider';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import GitHub from './pages/GitHub';
+import Hero from './pages/Hero';
+import Instagram from './pages/Instagram';
+import Projects from './pages/Projects';
+import WithLayout from './utils/hoc/withLayout';
+import GlobalStyle from './utils/styles/Global';
+import Theme from './utils/styles/Theme';
 
 const App = () => {
   return (
     <Theme>
-      <Layout>
+      <GlobalStyle />
+      <WithLayout>
         <Hero />
         <HeroDivider />
         <About />
@@ -26,7 +28,7 @@ const App = () => {
         <GitHub />
         <Divider />
         <Contact />
-      </Layout>
+      </WithLayout>
     </Theme>
   );
 };

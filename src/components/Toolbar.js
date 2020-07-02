@@ -14,7 +14,7 @@ const Bar = styled.header`
   justify-content: center;
   background-color: #221a36;
 
-  @media ${(props) => props.theme.mediaQueries.large} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
     width: 75%;
     justify-content: space-between;
   }
@@ -52,7 +52,7 @@ const Nav = styled.nav`
   margin: auto 0;
   display: none;
 
-  @media ${(props) => props.theme.mediaQueries.large} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
     display: block;
   }
 `;

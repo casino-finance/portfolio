@@ -3,8 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Footer from '../../components/Footer/Footer';
-import Toolbar from '../../components/Toolbar/Toolbar';
+import Footer from '../../components/Footer';
+import Toolbar from '../../components/Toolbar';
 
 const View = styled.div`
   position: relative;
@@ -18,17 +18,17 @@ const Main = styled.main`
   padding-bottom: 180px;
   font-size: 0.66em;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
     padding-bottom: 300px;
     font-size: 1em;
   }
 
-  @media ${(props) => props.theme.mediaQueries.large} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
     width: 50%;
   }
 `;
 
-const Layout = ({ children }) => {
+const WithLayout = ({ children }) => {
   return (
     <View>
       <Toolbar />
@@ -38,8 +38,8 @@ const Layout = ({ children }) => {
   );
 };
 
-Layout.propTypes = {
+WithLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default WithLayout;

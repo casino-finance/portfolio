@@ -4,9 +4,9 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 
-import GitHubCard from '../../components/GitHubCard/GitHubCard';
-import Anchor from '../../components/UI/Anchor/Anchor';
-import Title from '../../components/UI/Title/Title';
+import GitHubCard from '../components/GitHubCard';
+import Anchor from '../components/UI/Anchor';
+import Title from '../components/UI/Title';
 
 const Cont = styled.div`
   display: grid;
@@ -14,7 +14,7 @@ const Cont = styled.div`
 `;
 
 const Text = styled.div`
-  color: ${(props) => props.theme.colors.yellow};
+  color: ${({ theme: { colors } }) => colors.yellow};
   font: inherit;
   font-size: 20px;
   position: absolute;

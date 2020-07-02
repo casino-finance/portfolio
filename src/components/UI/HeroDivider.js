@@ -1,8 +1,9 @@
 import React from 'react';
+
 import styled from 'styled-components';
 
 const StyledHr = styled.hr`
-  background: ${(props) => props.theme.colors.pink};
+  background: ${({ theme: { colors } }) => colors.pink};
   border: 0;
   clear: both;
   display: block;
@@ -13,15 +14,15 @@ const StyledHr = styled.hr`
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
-  box-shadow: ${(props) => props.theme.shadow};
+  box-shadow: ${({ theme }) => theme.shadow};
 
-  @media ${(props) => props.theme.mediaQueries.large} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
     margin: 0 auto 2.4rem;
   }
 `;
 
-const Divider = () => {
+const HeroDivider = () => {
   return <StyledHr />;
 };
 
-export default Divider;
+export default HeroDivider;

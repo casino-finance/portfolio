@@ -7,8 +7,8 @@ const StyledButton = styled.button`
   display: inline-block;
   padding: 5px 12px;
   border-radius: 9999px;
-  color: ${(props) => props.theme.colors.purple};
-  background-color: ${(props) => props.theme.colors.pink};
+  color: ${({ theme: { colors } }) => colors.purple};
+  background-color: ${({ theme: { colors } }) => colors.pink};
   font: inherit;
   font-weight: 600;
   border: none;
@@ -22,7 +22,7 @@ const StyledButton = styled.button`
 
   @media (hover: hover) {
     :hover {
-      background-color: ${(props) => props.theme.colors.yellow};
+      background-color: ${({ theme: { colors } }) => colors.yellow};
     }
   }
 `;

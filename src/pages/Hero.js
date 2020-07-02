@@ -3,16 +3,16 @@ import React from 'react';
 import Particles from 'react-particles-js';
 import styled from 'styled-components';
 
-import Angular from '../../assets/icons/angular.svg';
-import Css3 from '../../assets/icons/css3.svg';
-import Html5 from '../../assets/icons/html5.svg';
-import JavaScript from '../../assets/icons/javascript.svg';
-import Mongo from '../../assets/icons/mongo.svg';
-import NodeJs from '../../assets/icons/node-dot-js.svg';
-import ReactSvg from '../../assets/icons/react.svg';
-import TypeScript from '../../assets/icons/typescript.svg';
-import heroImg from '../../assets/images/hero.png';
-import particlesParams from '../../assets/particlesjs-config.json';
+import Angular from '../assets/icons/angular.svg';
+import Css3 from '../assets/icons/css3.svg';
+import Html5 from '../assets/icons/html5.svg';
+import JavaScript from '../assets/icons/javascript.svg';
+import Mongo from '../assets/icons/mongo.svg';
+import NodeJs from '../assets/icons/node-dot-js.svg';
+import ReactSvg from '../assets/icons/react.svg';
+import TypeScript from '../assets/icons/typescript.svg';
+import heroImg from '../assets/images/hero.png';
+import particlesParams from '../assets/particlesjs-config.json';
 
 const Cont = styled.div`
   width: 100vw;
@@ -43,13 +43,13 @@ const HeroPic = styled.img`
   width: 250px;
   border-radius: 50%;
   transition: all 250ms ease-out;
-  box-shadow: ${(props) => props.theme.shadow};
+  box-shadow: ${({ theme }) => theme.shadow};
 
-  @media ${(props) => props.theme.mediaQueries.large} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
     width: 334px;
   }
 
-  @media ${(props) => props.theme.mediaQueries.landscape} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.landscape} {
     width: 234px;
   }
 
@@ -66,7 +66,7 @@ const IconsList = styled.div`
   text-align: center;
   display: block;
 
-  @media ${(props) => props.theme.mediaQueries.landscape} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.landscape} {
     display: none;
   }
 `;
@@ -77,7 +77,7 @@ const Ul = styled.ul`
   padding: 0;
   list-style: none;
 
-  @media ${(props) => props.theme.mediaQueries.large} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
     display: inline-block;
   }
 `;
@@ -90,7 +90,7 @@ const Icon = styled.img`
   width: 48px;
   margin: 4px 8px;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
     width: 72px;
   }
 `;

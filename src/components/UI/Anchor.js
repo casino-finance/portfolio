@@ -9,7 +9,7 @@ const SyledAnchor = styled.a`
   top: -1.2rem;
   visibility: hidden;
 
-  @media ${(props) => props.theme.mediaQueries.large} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
     top: -2.4rem;
   }
 `;

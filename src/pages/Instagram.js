@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 
-import InstaCard from '../../components/InstaCard/InstaCard';
-import Anchor from '../../components/UI/Anchor/Anchor';
-import Title from '../../components/UI/Title/Title';
+import InstaCard from '../components/InstaCard';
+import Anchor from '../components/UI/Anchor';
+import Title from '../components/UI/Title';
 
 const Cont = styled.div`
   padding: 0 15px;

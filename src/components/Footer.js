@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react';
 
 import styled from 'styled-components';
 
-import Facebook from '../../assets/icons/facebook.svg';
-import Github from '../../assets/icons/github.svg';
-import Instagram from '../../assets/icons/instagram.svg';
-import LastFm from '../../assets/icons/last-dot-fm.svg';
-import Linkedin from '../../assets/icons/linkedin.svg';
-import SoundCloud from '../../assets/icons/soundcloud.svg';
-import Telegram from '../../assets/icons/telegram.svg';
-import Twitter from '../../assets/icons/twitter.svg';
-import WaveSvg from '../../assets/wave.svg';
+import Facebook from '../assets/icons/facebook.svg';
+import Github from '../assets/icons/github.svg';
+import Instagram from '../assets/icons/instagram.svg';
+import LastFm from '../assets/icons/last-dot-fm.svg';
+import Linkedin from '../assets/icons/linkedin.svg';
+import SoundCloud from '../assets/icons/soundcloud.svg';
+import Telegram from '../assets/icons/telegram.svg';
+import Twitter from '../assets/icons/twitter.svg';
+import WaveSvg from '../assets/wave.svg';
 
 const FootCont = styled.div`
   position: absolute;
@@ -21,12 +21,12 @@ const FootCont = styled.div`
 
 const Foot = styled.div`
   height: 140px;
-  color: ${(props) => props.theme.colors.purple};
-  background-color: ${(props) => props.theme.colors.pink};
+  color: ${({ theme: { colors } }) => colors.purple};
+  background-color: ${({ theme: { colors } }) => colors.pink};
   font-family: inherit;
   text-align: center;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
     height: 120px;
   }
 `;
@@ -43,7 +43,7 @@ const Ul = styled.ul`
   text-align: center;
   list-style: none;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
     display: inline-block;
     padding: 16px 0;
   }

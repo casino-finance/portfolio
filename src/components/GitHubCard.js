@@ -1,5 +1,6 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Card = styled.div`
@@ -22,6 +23,12 @@ const GitHubCard = ({ children, link, language }) => {
       </a>
     </Card>
   );
+};
+
+GitHubCard.propTypes = {
+  children: PropTypes.string.isRequired,
+  language: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 export default GitHubCard;

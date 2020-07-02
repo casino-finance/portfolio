@@ -3,14 +3,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Button from '../UI/Button/Button';
+import Button from './UI/Button';
 
 const Img = styled.img`
   width: 100px;
   border-radius: 15px;
-  box-shadow: ${(props) => props.theme.shadow};
+  box-shadow: ${({ theme }) => theme.shadow};
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
     width: 200px;
     border-radius: 30px;
   }
@@ -22,7 +22,7 @@ const Card = styled.div`
   border-radius: 12px;
   position: relative;
   box-sizing: border-box;
-  box-shadow: ${(props) => props.theme.shadow};
+  box-shadow: ${({ theme }) => theme.shadow};
 `;
 
 const MockupColumn = styled.div`
@@ -30,7 +30,7 @@ const MockupColumn = styled.div`
   text-align: center;
   width: 100%;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
     width: 40%;
   }
 `;
@@ -44,7 +44,7 @@ const TextColumn = styled.div`
   top: 0;
   bottom: 12px;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
     position: absolute;
     width: 60%;
   }
@@ -55,7 +55,7 @@ const Buttons = styled.div`
   text-align: center;
   margin: 12px;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
     float: right;
     text-align: left;
   }
@@ -65,7 +65,7 @@ const Title = styled.h1`
   text-align: center;
   text-decoration: underline;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
     text-align: left;
   }
 `;
@@ -77,7 +77,7 @@ const Build = styled.p`
   margin-top: 5px;
   bottom: 5px;
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
     position: absolute;
     bottom: 0px;
     left: 0px;
