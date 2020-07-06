@@ -10,7 +10,15 @@ import Title from '../components/UI/Title';
 
 const Cont = styled.div`
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(1 auto);
+
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
+    grid-template-columns: repeat(3, auto);
+  }
 `;
 
 const Text = styled.div`
@@ -70,13 +78,21 @@ const GitHub = () => {
         <Anchor id="github" />
         <Title>{'{ gitHub }'}</Title>
         <Cont>
-          {data.ghData.map(({ node_id, name, html_url, language }) => {
-            return (
-              <GitHubCard key={node_id} link={html_url} language={language}>
-                {name}
-              </GitHubCard>
-            );
-          })}
+          {data.ghData.map(
+            ({ node_id, full_name, html_url, language, stargazers_count, watchers_count }) => {
+              return (
+                <GitHubCard
+                  key={node_id}
+                  link={html_url}
+                  language={language}
+                  stars={stargazers_count}
+                  watches={watchers_count}
+                >
+                  {full_name}
+                </GitHubCard>
+              );
+            },
+          )}
         </Cont>
       </>
     );
