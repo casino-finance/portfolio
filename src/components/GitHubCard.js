@@ -55,10 +55,14 @@ const GitHubCard = ({ children, link, language, stars, watches }) => {
 
 GitHubCard.propTypes = {
   children: PropTypes.string.isRequired,
-  language: PropTypes.string.isRequired,
+  language: PropTypes.string,
   link: PropTypes.string.isRequired,
   stars: PropTypes.number.isRequired,
   watches: PropTypes.number.isRequired,
+};
+
+GitHubCard.defaultProps = {
+  language: null,
 };
 
 export default GitHubCard;
