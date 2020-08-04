@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Particles from 'react-particles-js';
+import Particles from 'react-tsparticles';
 import styled from 'styled-components';
 
 import Angular from '../assets/icons/angular.svg';
