@@ -82,7 +82,7 @@ const Li = styled.li`
 
   @media (hover: hover) {
     :hover {
-      color: ${({ theme: { colors } }) => colors.purple};
+      color: ${({ theme: { colors } }) => colors.pink};
       -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
       transform: scale(1.2);
