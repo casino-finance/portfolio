@@ -12,7 +12,7 @@ const Bar = styled.header`
   box-sizing: border-box;
   z-index: 90;
   justify-content: center;
-  background-color: #221a36;
+  background-color: ${({ theme: { colors } }) => colors.purple};
 
   @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
     width: 75%;
@@ -40,7 +40,7 @@ const Title = styled.p`
 
   @media (hover: hover) {
     :hover {
-      color: #e91e63;
+      color: ${({ theme: { colors } }) => colors.pink};
       -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
       transform: scale(1.2);
@@ -82,7 +82,7 @@ const Li = styled.li`
 
   @media (hover: hover) {
     :hover {
-      color: #e91e63;
+      color: ${({ theme: { colors } }) => colors.purple};
       -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
       transform: scale(1.2);

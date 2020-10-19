@@ -17,7 +17,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  color: #dde5c9;
+  color: #fff9c4;
   font-family: "Roboto Mono", monospace;
   word-wrap: break-word;
   font-kerning: normal;

@@ -5,8 +5,8 @@ import { ThemeProvider } from 'styled-components';
 const theme = {
   colors: {
     purple: '#221a36',
-    yellow: '#dde5c9',
-    pink: '#e91e63',
+    yellow: '#fff9c4',
+    pink: '#ff2f69',
   },
   mediaQueries: {
     large: '(min-width: 1280px)',
