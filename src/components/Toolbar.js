@@ -12,7 +12,7 @@ const Bar = styled.header`
   box-sizing: border-box;
   z-index: 90;
   justify-content: center;
-  background-color: ${({ theme: { colors } }) => colors.purple};
+  background-color: ${({ theme: { colors } }) => colors.none};
 
   @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
     width: 75%;

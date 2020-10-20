@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { ThemeProvider } from 'styled-components'
+import { UseWalletProvider } from 'use-wallet'
 
 import Divider from './components/UI/Divider';
 import HeroDivider from './components/UI/HeroDivider';
@@ -31,6 +34,20 @@ const App = () => {
       </WithLayout>
     </Theme>
   );
-};
+}
+
+const Providers: React.FC = ({ children }) => {
+  return (
+    <UseWalletProvider
+      chainId={1}
+      connectors={{
+        walletconnect: { rpcUrl: 'https://mainnet.eth.aragon.network/' },
+      }}
+    >
+    </UseWalletProvider>
+
+  )
+}
+
 
 export default App;

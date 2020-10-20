@@ -98,7 +98,7 @@ const Icon = styled.img`
 const Hero = () => {
   return (
     <Cont>
-      <HeroPic src={heroImg} alt="Hero Photo" />
+
       <IconsList>
         <Ul>
           <Li>
