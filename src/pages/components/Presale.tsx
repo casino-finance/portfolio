@@ -80,7 +80,7 @@ const Presale = () => {
                                 <h3>or scan QR code below</h3>
                                 <br></br>
                                 <StyledImg>
-                                    <img className="d-md-none" src={image} height="300" style={{ marginTop: -4 }} />
+                                    <img className="d-md-none" src={image} height="300" style={{ marginTop: -4 }} alt='qr' />
                                 </StyledImg>
                             </div>
                             <Spacer />

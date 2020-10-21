@@ -8,18 +8,6 @@ import Title from '../components/UI/Title';
 import Container from '../components/Container'
 import Presale from './components/Presale'
 
-const StyledImg = styled.div`
-    .d-md-none {
-        @media (max-width: 1024px) {
-            display: none;
-        }
-    }
-    .d-lg-none {
-        @media (min-width: 1025px) {
-            display: none;
-        }
-    }
-`
 
 const Wrap = styled.div`
   padding: 0 15px;

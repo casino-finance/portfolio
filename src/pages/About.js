@@ -8,18 +8,8 @@ import Title from '../components/UI/Title';
 import image from '../assets/images/girls.png'
 
 import Container from './../components/Container'
-import Button from './../components/Button'
 import Balances from './components/Balances'
 
-const Img = styled.img`
-  width: 500px;
-  border-radius: 75px;
-
-  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
-    width: 200px;
-    border-radius: 75px;
-  }
-`;
 
 const StyledImg = styled.div`
     .d-md-none {
@@ -53,7 +43,7 @@ const About = () => {
           Spend your GAMBLE tokens on inhouse provably fair games such as Lottery, Dice, Roullette, Blockchainopoly, NFT auctions, and more!
         </h3>
         <StyledImg>
-                <img className="d-md-none" src={image} height="300" style={{ marginTop: -4 }} />
+                <img className="d-md-none" src={image} height="300" style={{ marginTop: -4 }} alt='img' />
         </StyledImg>
         <br>
         </br>

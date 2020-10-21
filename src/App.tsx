@@ -1,5 +1,4 @@
 import React from 'react'
-import { UseWalletProvider } from 'use-wallet';
 
 import Divider from './components/UI/Divider';
 import HeroDivider from './components/UI/HeroDivider';
@@ -34,19 +33,6 @@ const App = () => {
       </WithLayout>
     </Theme>
   );
-}
-
-const Providers: React.FC = ({ children }) => {
-  return (
-    <UseWalletProvider
-      chainId={1}
-      connectors={{
-        walletconnect: { rpcUrl: 'https://mainnet.eth.aragon.network/' },
-      }}
-    >
-    </UseWalletProvider>
-
-  )
 }
 
 
