@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import GitHub from './pages/GitHub';
 import Hero from './pages/Hero';
+import LiquidityEvent from './pages/LiquidityEvent';
 import Instagram from './pages/Instagram';
 import Projects from './pages/Projects';
 import WithLayout from './utils/hoc/withLayout';
@@ -21,7 +22,8 @@ const App = () => {
         <Hero />
         <HeroDivider />
         <About />
-        <Divider />
+        <HeroDivider />
+        <LiquidityEvent />
         <Instagram />
         <Divider />
         <Projects />

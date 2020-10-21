@@ -3,7 +3,7 @@ import React from 'react';
 import Particles from 'react-tsparticles';
 import styled from 'styled-components';
 
-import particlesParams from '../assets/particlesjs-config.json';
+import particlesParams from '../assets/particlesjs-config2.json';
 
 import Anchor from '../components/UI/Anchor';
 import Title from '../components/UI/Title';
@@ -71,7 +71,7 @@ const Cont = styled.div`
   }
 `;
 
-const Hero = () => {
+const Hero1 = () => {
   return (
     <Cont>
       <>
@@ -117,4 +117,4 @@ const Hero = () => {
 };
 
 
-export default Hero;
+export default Hero1;
