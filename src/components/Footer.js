@@ -105,7 +105,7 @@ const Footer = () => {
         </Ul>
         <Ul>
           <Li>
-            <Icon href="https://t.me/rajcep" rel="noopener noreferrer" target="_blank">
+            <Icon href="https://t.me/CasinoFinance" rel="noopener noreferrer" target="_blank">
               <img width="32px" src={Telegram} alt="Telegram Icon" />
             </Icon>
           </Li>
