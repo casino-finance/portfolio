@@ -63,7 +63,6 @@ const Buttons = styled.div`
 
 const Title = styled.h1`
   text-align: center;
-  text-decoration: underline;
 
   @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
     text-align: left;
@@ -84,9 +83,8 @@ const Build = styled.p`
   }
 `;
 
-const Project = ({ title, description, build, image, alt, live, repo }) => {
-  const liveOutput = live ? <Button link={live}>LIVE</Button> : null;
-  const repoOutput = repo ? <Button link={repo}>REPO</Button> : null;
+const Project = ({ title, description, build, image, alt, live }) => {
+  const liveOutput = live ? <Button link={live}>Soon</Button> : null;
 
   return (
     <Card>
@@ -96,7 +94,6 @@ const Project = ({ title, description, build, image, alt, live, repo }) => {
       <TextColumn>
         <Buttons>
           {liveOutput}
-          {repoOutput}
         </Buttons>
         <Title>{title}</Title>
         <Desc>{description}</Desc>
@@ -112,13 +109,11 @@ Project.propTypes = {
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   live: PropTypes.string,
-  repo: PropTypes.string,
   title: PropTypes.string.isRequired,
 };
 
 Project.defaultProps = {
   live: null,
-  repo: null,
 };
 
 export default Project;

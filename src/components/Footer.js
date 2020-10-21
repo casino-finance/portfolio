@@ -84,22 +84,13 @@ const Footer = () => {
       <Foot>
         <Ul>
           <Li>
-            <Icon href="https://github.com/RajceP" rel="noopener noreferrer" target="_blank">
+            <Icon href="https://github.com/casino-finance" rel="noopener noreferrer" target="_blank">
               <img width="32px" src={Github} alt="GitHub Icon" />
             </Icon>
           </Li>
           <Li>
             <Icon
-              href="https://www.linkedin.com/in/petr-rajtšlégr-5aa84a16b"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img width="32px" src={Linkedin} alt="LinkedIn Icon" />
-            </Icon>
-          </Li>
-          <Li>
-            <Icon
-              href="https://www.facebook.com/petr.rajtslegr"
+              href="https://www.facebook.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -107,34 +98,25 @@ const Footer = () => {
             </Icon>
           </Li>
           <Li>
-            <Icon href="https://twitter.com/RajceP" rel="noopener noreferrer" target="_blank">
+            <Icon href="https://twitter.com/" rel="noopener noreferrer" target="_blank">
               <img width="32px" src={Twitter} alt="Twitter Icon" />
             </Icon>
           </Li>
         </Ul>
         <Ul>
           <Li>
-            <Icon href="https://www.instagram.com/rajce" rel="noopener noreferrer" target="_blank">
-              <img width="32px" src={Instagram} alt="Instagram Icon" />
-            </Icon>
-          </Li>
-          <Li>
             <Icon href="https://t.me/rajcep" rel="noopener noreferrer" target="_blank">
               <img width="32px" src={Telegram} alt="Telegram Icon" />
             </Icon>
           </Li>
           <Li>
-            <Icon href="https://www.last.fm/user/RajceP" rel="noopener noreferrer" target="_blank">
-              <img width="32px" src={LastFm} alt="Last.fm Icon" />
-            </Icon>
-          </Li>
-          <Li>
-            <Icon href="https://soundcloud.com/rajcep" rel="noopener noreferrer" target="_blank">
+            <Icon href="https://etherscan.io/token/0x29e6d4a5be018d3809a72ddab8d09285d42a169b" rel="noopener noreferrer" target="_blank">
               <img width="32px" src={SoundCloud} alt="SoundCloud Icon" />
             </Icon>
           </Li>
         </Ul>
-        <div>Petr Rajtslegr &copy; {year}</div>
+        <div>Casino Finance &copy; {year}</div>
+        <div>https://casinofinance.org/</div>
       </Foot>
     </FootCont>
   );

@@ -17,7 +17,7 @@ const Work = () => {
     return require(`../assets/images/${img}`);
   };
 
-  const workOutput = projects.map(({ title, image, name, description, build, live, repo }) => {
+  const workOutput = projects.map(({ title, image, name, description, build, live }) => {
     return (
       <Project
         key={title}
@@ -27,15 +27,14 @@ const Work = () => {
         description={description}
         build={build}
         live={live}
-        repo={repo}
       />
     );
   });
 
   return (
     <>
-      <Anchor id="projects" />
-      <Title>{'{ projects }'}</Title>
+      <Anchor id="farm" />
+      <Title>Earn CFI</Title>
       <Wrap>{workOutput}</Wrap>
     </>
   );

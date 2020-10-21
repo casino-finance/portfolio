@@ -17,12 +17,15 @@ const Contact = () => {
   return (
     <>
       <Anchor id="contact" />
-      <Title>{'{ contact }'}</Title>
+      <Title>Contact Us 24/7</Title>
       <Wrap>
-        <h1>Let&apos;s make something great together!</h1>
-        <h1>You can get in touch with me here.</h1>
+        <h2>Like most casinos are. We are live 24/7.</h2>
+        <h2>Reach us for anytype of degen questions!</h2>
+        <br />
+        <br />
+        <h3>Just don&apos;t expect quick answers.</h3>
         <a
-          href="mailto:petr.rajtslegr@google.com?subject=Contact me!"
+          href="mailto:info@casinofinance.org?subject=Contact me!"
           rel="noopener noreferrer"
           target="_blank"
         >

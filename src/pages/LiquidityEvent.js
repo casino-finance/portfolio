@@ -17,11 +17,11 @@ const Wrap = styled.div`
 const About = () => {
   return (
     <>
-      <Anchor id="CFI" />
+      <Anchor id="liquidityevent" />
       <Title>Pre-Sale and Liquidity Event</Title>
       <Wrap>
         <h3>
-          Step 1) Buy an "x" amount of CFI tokens.
+          Step 1) Buy an &ldquo;x&ldquo; amount of CFI tokens.
         </h3>
         <h3>
           Step 2) Add liquidity on Uniswap.

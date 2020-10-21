@@ -100,19 +100,19 @@ const Toolbar = () => {
         <Nav>
           <Ul>
             <Li>
-              <a href="#root">Farm</a>
+              <a href="#CFI">Farm</a>
             </Li>
             <Li>
-              <a href="#instagram">NFT</a>
+              <a href="#NFT">NFT</a>
             </Li>
             <Li>
               <a href="#projects">Governance</a>
             </Li>
             <Li>
-              <a href="#github">Don't Gamble</a>
+              <a href="#farm">Don't Gamble</a>
             </Li>
             <Li>
-              <a href="#contact">Buy CFI</a>
+              <a href="#liquidityevent">Buy CFI</a>
             </Li>
           </Ul>
         </Nav>
