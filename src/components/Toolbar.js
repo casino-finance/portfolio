@@ -95,24 +95,24 @@ const Toolbar = () => {
     <Headroom>
       <Bar>
         <Title>
-          <a href="#root">{'{ petr.rajtslegr }'}</a>
+          <a href="#root">Casino Finance</a>
         </Title>
         <Nav>
           <Ul>
             <Li>
-              <a href="#about">{'{ about }'}</a>
+              <a href="#root">Farm</a>
             </Li>
             <Li>
-              <a href="#instagram">{'{ instagram }'}</a>
+              <a href="#instagram">NFT</a>
             </Li>
             <Li>
-              <a href="#projects">{'{ projects }'}</a>
+              <a href="#projects">Governance</a>
             </Li>
             <Li>
-              <a href="#github">{'{ gitHub }'}</a>
+              <a href="#github">Don't Gamble</a>
             </Li>
             <Li>
-              <a href="#contact">{'{ contact }'}</a>
+              <a href="#contact">Buy CFI</a>
             </Li>
           </Ul>
         </Nav>

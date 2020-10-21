@@ -3,7 +3,7 @@
     "color": "#000000",
     "image": "url('bg.jpg')",
     "position": "50% 50%",
-    "repeat": "repeat",
+    "repeat": "no-repeat",
     "size": "cover"
   },
   "detectRetina": true,
@@ -235,7 +235,7 @@
         "value": "#000000",
         "animation": {
           "enable": false,
-          "speed": 1,
+          "speed": 10,
           "sync": true
         }
       }

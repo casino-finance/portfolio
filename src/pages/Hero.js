@@ -3,16 +3,62 @@ import React from 'react';
 import Particles from 'react-tsparticles';
 import styled from 'styled-components';
 
-import Angular from '../assets/icons/angular.svg';
-import Css3 from '../assets/icons/css3.svg';
-import Html5 from '../assets/icons/html5.svg';
-import JavaScript from '../assets/icons/javascript.svg';
-import Mongo from '../assets/icons/mongo.svg';
-import NodeJs from '../assets/icons/node-dot-js.svg';
-import ReactSvg from '../assets/icons/react.svg';
-import TypeScript from '../assets/icons/typescript.svg';
-import heroImg from '../assets/images/hero.png';
+import PropTypes from 'prop-types';
 import particlesParams from '../assets/particlesjs-config.json';
+
+import Anchor from '../components/UI/Anchor';
+import Title from '../components/UI/Title';
+
+
+import Button from '../components/UI/Button';
+
+const Buttons = styled.div`
+  float: none;
+  text-align: center;
+  margin: 12px;
+
+  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
+    float: right;
+    text-align: left;
+  }
+`;
+
+const Wrap = styled.div`
+  padding: 0 15px;
+`;
+
+const HandEmoji = styled.span`
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-10deg);
+    }
+    20% {
+      transform: rotate(12deg);
+    }
+    30% {
+      transform: rotate(-10deg);
+    }
+    40% {
+      transform: rotate(9deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+`;
+
 
 const Cont = styled.div`
   width: 100vw;
@@ -24,6 +70,7 @@ const Cont = styled.div`
   justify-content: center;
   height: 100vh;
   animation: fadein 2s;
+  text-align: center;
 
   @keyframes fadein {
     0% {
@@ -38,97 +85,43 @@ const Cont = styled.div`
   }
 `;
 
-const HeroPic = styled.img`
-  margin: 0 auto 38px;
-  width: 250px;
-  border-radius: 50%;
-  transition: all 250ms ease-out;
-  box-shadow: ${({ theme }) => theme.shadow};
-
-  @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
-    width: 334px;
-  }
-
-  @media ${({ theme: { mediaQueries } }) => mediaQueries.landscape} {
-    width: 234px;
-  }
-
-  @media (hover: hover) {
-    :hover {
-      -webkit-transform: rotateZ(-15deg);
-      -ms-transform: rotateZ(-15deg);
-      transform: rotateZ(-15deg);
-    }
-  }
-`;
-
-const IconsList = styled.div`
-  text-align: center;
-  display: block;
-
-  @media ${({ theme: { mediaQueries } }) => mediaQueries.landscape} {
-    display: none;
-  }
-`;
-
-const Ul = styled.ul`
-  display: block;
-  text-align: center;
-  padding: 0;
-  list-style: none;
-
-  @media ${({ theme: { mediaQueries } }) => mediaQueries.large} {
-    display: inline-block;
-  }
-`;
-
-const Li = styled.li`
-  display: inline-block;
-`;
-
-const Icon = styled.img`
-  width: 48px;
-  margin: 4px 8px;
-
-  @media ${({ theme: { mediaQueries } }) => mediaQueries.medium} {
-    width: 72px;
-  }
-`;
-
 const Hero = () => {
   return (
     <Cont>
+      <>
+        <Anchor id="CFI" />
+        <Title>Casino Finance</Title>
+        <Wrap>
+          <h1>
+            Welcome to casino finance!
+          {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
+            <HandEmoji role="img" aria-label="Waving hand">
+              👋
+          </HandEmoji>
+          </h1>
+          <h3>
+            Your ultimate NFT based, Gamification-focused DeFi yield farming platform.
+          </h3>
+          <br />
+          <h3>
+            Allowing every degens to hit the jackpot.
+          </h3>
+          <br />
+          <br />
+          <br />
+          <h3>
+            Will start dealing before the halloween.
+          </h3>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </Wrap>
+        <Title>Pre-sale and Liquidity Event is Live!</Title>
+      </>
+      <br />
 
-      <IconsList>
-        <Ul>
-          <Li>
-            <Icon src={Html5} alt="HTML5 Icon" />
-          </Li>
-          <Li>
-            <Icon src={Css3} alt="CSS3 Icon" />
-          </Li>
-          <Li>
-            <Icon src={JavaScript} alt="JavaScript Icon" />
-          </Li>
-          <Li>
-            <Icon src={TypeScript} alt="TypeScript Icon" />
-          </Li>
-        </Ul>
-        <Ul>
-          <Li>
-            <Icon src={ReactSvg} alt="React Icon" />
-          </Li>
-          <Li>
-            <Icon src={Angular} alt="Angular Icon" />
-          </Li>
-          <Li>
-            <Icon src={NodeJs} alt="Node.js Icon" />
-          </Li>
-          <Li>
-            <Icon src={Mongo} alt="MySQL Icon" />
-          </Li>
-        </Ul>
-      </IconsList>
       <Particles
         params={particlesParams}
         style={{ position: 'absolute', zIndex: '-1', top: '0', left: '0' }}
@@ -136,5 +129,6 @@ const Hero = () => {
     </Cont>
   );
 };
+
 
 export default Hero;
